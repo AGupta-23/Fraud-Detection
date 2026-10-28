@@ -1,14 +1,6 @@
 # Project Tracker: Trading Account Anomaly Detection
 
-A production-style service that scores trading accounts for abuse (bots, trial abuse, multi-accounting) and explains every flag in plain English.
-Tick a box (`[x]`) when a task is done. Update the "Status" line at the top of each phase.
-
-**Workflow for every phase:** try each step in that phase's notebook first to understand it, then move the working code into `src/` and have the notebook import it from there. Logic lives in `src/`; notebooks are for learning and demos.
-
 **Overall progress:** 0 / 8 phases complete
-**Scope:** core = Phases 1-8 (ends with the local API and wrap-up). Stretch items are parked at the bottom; do not start them until the core is done.
-
----
 
 ## Phase 1: Requirements and Success Criteria
 **Status:** Not started
