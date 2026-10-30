@@ -74,20 +74,20 @@ Tick a box (`[x]`) when a task is done. Update the "Status" line at the top of e
 **Status:** Not started
 **Goal:** Turn raw columns into five model-ready features with one reusable function used in both training and serving.
 
-- [ ] Write `build_features()` in `src/features.py`
-- [ ] Feature 1: account age
-- [ ] Feature 2: trades per day
-- [ ] Feature 3: order spike ratio (handle the zero-baseline case)
-- [ ] Feature 4: linked account count
-- [ ] Feature 5: timing regularity
-- [ ] Decide on a log transform for heavy-tailed columns (based on Phase 3)
-- [ ] Fit StandardScaler and save it to `artifacts/scaler.pkl`
-- [ ] Save the final feature list (so the API can reject bad inputs)
-- [ ] Save `data/feature_matrix.csv`
-- [ ] Write `docs/feature_rationales.md` (one line per feature, in my own words)
-- [ ] Write `tests/test_features.py` (output columns, no missing values, zero-baseline case, scaler reloads identically)
-- [ ] Confirm the feature code never touches `labels.csv`
-- [ ] Build `notebooks/04_features.ipynb` (each feature built on a few example accounts, before and after scaling)
+- [x] Write `build_features()` in `src/features.py`
+- [x] Feature 1: account age
+- [x] Feature 2: trades per day
+- [x] Feature 3: order spike ratio (handle the zero-baseline case)
+- [x] Feature 4: linked account count
+- [x] Feature 5: timing regularity
+- [x] Decide on a log transform for heavy-tailed columns (based on Phase 3)
+- [x] Fit StandardScaler and save it to `artifacts/scaler.pkl`
+- [x] Save the final feature list (so the API can reject bad inputs)
+- [x] Save `data/feature_matrix.csv`
+- [x] Write `docs/feature_rationales.md` (one line per feature, in my own words)
+- [x] Write `tests/test_features.py` (output columns, no missing values, zero-baseline case, scaler reloads identically)
+- [x] Confirm the feature code never touches `labels.csv`
+- [x] Build `notebooks/04_features.ipynb` (each feature built on a few example accounts, before and after scaling)
 
 **Can I explain:** what each feature measures, what scaling is, why the scaler is saved, and why the same feature code runs in training and serving?  [ ]
 
